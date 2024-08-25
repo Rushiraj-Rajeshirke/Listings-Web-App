@@ -1,0 +1,43 @@
+<% layout("/Layouts/boilerplate.ejs") %>
+<div class="row">
+    <div class="col-8 offset-2">
+        <br>
+        <h3>Enter Listing details: </h3>
+            <form method="POST" action="/listings">
+            <div class="mb-3">
+                <label for="title" class="form-label" >Title</label>
+                <input type="text" name="listing[title]" placeholder="Enter title" class="form-control">
+            </div>
+       
+            <div class="mb-3">
+                <label for="description" class="form-label" >Description</label>
+                <textarea type="text" name="listing[description]"  class="form-control"></textarea>
+            </div>
+        
+            <div class="mb-3">
+                <label for="image" class="form-label" >Image</label>
+                <input type="text" name="listing[image]" placeholder="Enter image URL" class="form-control">
+            </div>
+       
+            <div class="row">
+                <div class="mb-3 col-md-5">
+                    <label for="price" class="form-label" >Price</label>
+                    <input type="number" name="listing[price]" placeholder="Enter price" class="form-control">
+                </div>
+            
+                <div class="mb-3 col-md-7">
+                    <label for="location" class="form-label" >Location</label>
+                    <input type="text" name="listing[location]" placeholder="Enter location" class="form-control">
+                </div>
+            </div>
+        
+            <div class="mb-3">
+                <label for="country" class="form-label" >Country</label>
+                <input type="text" name="listing[county]" placeholder="Enter country" class="form-control">
+            </div>
+    
+            <button class="btn btn-dark add-btn" >Submit</button>
+            <br><br>
+        </form>
+    </div>
+</div>
